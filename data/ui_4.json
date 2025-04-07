@@ -1,0 +1,99 @@
+ 
+
+{
+
+	"name":"pause_menu",
+
+	"positions":{
+		"components":{
+					
+			"pattern":{
+					"start":[305,245],
+					"step":[0,65]
+				}
+
+		},
+		"back_ground":{
+			"jungle_still":[0,0],
+			"moon_anim":[30,150],
+			"fire":[200,450],
+			"stone_levels":[250,250]
+
+		}
+		
+
+
+	},
+
+	"back_ground":{
+			"jungle_still":["AO"],
+			"moon_anim":["AO"],
+			"fire":[200,450],
+			"stone_levels":[250,250]
+
+		},
+
+	"components":[
+
+
+
+		{
+			"type":"button",
+			"name":"main_menu",
+			"pos":1,
+			"diminsions":[90,40],
+			"func":[
+
+				{
+				"respond":"click",
+				"system":"UI",
+				"modify":"game_state",
+				"state":"ui_1"
+				},
+				{
+				"respond":"hover",
+				"func":["hover_menu","show",1]
+				}
+
+			]
+
+		},
+		{
+			"type":"button",
+			"name":"back",
+			"diminsions":[130,40],
+			"pos":2,
+			"func":[
+				{
+				"respond":"click",
+				"system":"UI",
+				"modify":"game_state",
+				"state":0
+
+			}
+		]
+
+		},
+		{
+			"type":"button",
+			"name":"settings",
+			"diminsions":[145,40],
+			"pos":3,
+			"func":[
+				{
+				"respond":"click",
+				"system":"UI",
+				"modify":"game_state",
+				"state":"ui_?"
+
+			}
+		]
+		}
+	]
+
+
+}
+
+
+
+

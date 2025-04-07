@@ -1,0 +1,17 @@
+{
+
+	"name":"helwan",
+	"back_ground":"back_ground",
+	"grids":[
+		{
+			"color":["freq","rand"],
+			"size":["rand"],
+			"progress":[["red",-1,5]],
+			"timer":0,
+			"put":"same_color",
+			"score_counter":0,
+			"grid_size":[10,10]
+
+		}
+	]
+}
