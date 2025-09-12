@@ -1,8 +1,4 @@
-##Contents:
--[Installation] (#installing)
--[playing] (#playing)
--[license] (#license)
--[credit] (#credit)
+
 
 ## installing
 before running ```main.py``` run :
