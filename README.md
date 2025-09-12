@@ -1,3 +1,8 @@
+Contents:
+-[Installation] #installing
+-[playing] #playing
+-[license] #license
+
 before running main.py run
 pip install -r requirements.txt
 nice play !
