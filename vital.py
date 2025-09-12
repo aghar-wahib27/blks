@@ -13,7 +13,7 @@ scr=pygame.display.set_mode(dims)
 
 GAME_STATE={
 	"run":1,
-	"UI":'ui_100',
+	"UI":'ui_1',
 	"level":"",
 	"change":[1,0],
     "fade":[0,0,0]
