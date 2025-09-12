@@ -25,3 +25,6 @@ nice play !
 ## credit
 credit to nic barker : https://www.youtube.com/@nicbarkeragain
 as the UI system of the whole project is inspired from him
+
+## license
+This project is licensed under the [MIT License](LICENSE)
