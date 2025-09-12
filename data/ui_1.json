@@ -3,35 +3,27 @@
 {
 
 	"name":"main_menu",
+	"gap":100,
+	"padding":[30,30,30,30],
 
-	"positions":{
-		"components":{
-					
-			"pattern":{
-					"start":[65,245],
-					"step":[0,65]
-				}
-
-		},
-		"back_ground":{
-			"jungle_still":[0,0],
-			"moon_anim":[30,150],
-			"fire":[200,450],
-			"stone_levels":[250,250]
-
-		}
-		
-
-
-	},
-
+	"mode":["order"],
 	"back_ground":{
-			"jungle_still":["AO"],
-			"moon_anim":["AO"],
-			"fire":[200,450],
-			"stone_levels":[250,250]
+				"bg_ui_11":{
+					"anims":[
+						["moon_anim",100,45,3,6,15,265,145],
+						["moon_anim",400,45,3,6,15,265,145]
 
-		},
+					],
+					"blur":3
+
+
+				},
+				"bg_ui_12":{
+					"anims":[
+						["fire_anim",100,600,5,8,14,170,120]
+					]
+				}
+			},
 
 	"components":[
 
@@ -40,8 +32,20 @@
 		{
 			"type":"button",
 			"name":"Start",
-			"pos":1,
-			"diminsions":[90,40],
+			"parent_name":"cont_2",
+			"children":{
+				"img":["bomareng_pointer"],
+				"text":["Start"]
+
+
+			},
+			"spacing":{
+				"margin":[0,0,0,0],
+				"padding":[0,0,0,0],
+				"gap":10,
+				"mode":["order"]
+
+			},
 			"func":[
 
 				{
@@ -53,7 +57,12 @@
 				{
 				"respond":"hover",
 				"func":["hover_menu","show",1]
+				},{
+				"respond":"click",
+				"modify":"fade",
+				"data":[[1,0],"ui_2",""]
 				}
+
 
 			]
 
@@ -61,24 +70,49 @@
 		{
 			"type":"button",
 			"name":"Credits",
-			"diminsions":[130,40],
-			"pos":2,
+			"parent_name":"cont_2",
+			"children":{
+				"img":["bomareng_pointer"],
+				"text":["Credits"]
+
+			},
+			"spacing":{
+				"margin":[0,0,0,0],
+				"padding":[0,0,0,0],
+				"gap":10,
+				"mode":["order"]
+			},
 			"func":[
 				{
 				"respond":"click",
 				"system":"UI",
 				"modify":"game_state",
-				"state":"ui_?"
+				"state":"ui_5"
 
-			}
+			},{
+				"respond":"click",
+				"modify":"fade",
+				"data":[[1,0],"ui_5",""]
+				}
 		]
 
 		},
 		{
 			"type":"button",
 			"name":"Settings",
-			"diminsions":[145,40],
-			"pos":3,
+			"parent_name":"cont_2",
+			"children":{
+				"img":["bomareng_pointer"],
+				"text":["Settings"]
+
+			},
+			"spacing":{
+				"margin":[0,0,0,0],
+				"padding":[0,0,0,0],
+				"gap":10,
+				"mode":["order"]
+
+			},
 			"func":[
 				{
 				"respond":"click",
@@ -89,11 +123,22 @@
 			}
 		]
 		},
-			{
+		{
 			"type":"button",
 			"name":"Quit",
-			"diminsions":[80,40],
-			"pos":4,
+			"parent_name":"cont_2",
+			"children":{
+				"img":["bomareng_pointer"],
+				"text":["Quit"]
+
+			},
+			"spacing":{
+				"margin":[0,0,0,0],
+				"padding":[0,0,0,0],
+				"gap":10,
+				"mode":["order"]
+
+			},
 			"func":[
 				{
 				"respond":"click",
@@ -105,6 +150,55 @@
 
 		
 		}
+	],
+
+	"containers":[
+
+		{
+			"name":"cont_1",
+			"parent_name":"root",
+			"sizing":["fit_w","grow"],
+			"spacing":{
+				"margin":[0,0,0,0],
+				"padding":[20,20,200,0],
+				"gap":10,
+				"mode":["order"]
+
+			},
+			"dir":"UTD"
+
+		},
+		{
+			"name":"cont_3",
+			"parent_name":"root",
+			"sizing":["grow","per_h+50"],
+			"spacing":{
+				"margin":[0,0,0,0],
+				"padding":[20,20,20,30],
+				"gap":10,
+				"mode":["order"]
+
+			},
+			"dir":"LTR"
+
+		},
+		{
+			"name":"cont_2",
+			"parent_name":"cont_1",
+			"sizing":["fit_w","fit_h"],
+			"spacing":{
+				"margin":[0,0,0,0],
+				"padding":[0,10,10,10],
+				"gap":20,
+				"mode":["order"]
+
+			},
+			"dir":"UTD"
+		}
+
+
+
+
 	]
 
 

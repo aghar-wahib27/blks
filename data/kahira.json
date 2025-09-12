@@ -1,17 +1,45 @@
 {
-
-	"name":"kahira",
-	"back_ground":"back_ground",
-	"grids":[
-		{
-			"color":["freq","rand"],
-			"size":["rand"],
-			"progress":[["red",-1,5]],
-			"timer":0,
-			"put":"same_color",
-			"score_counter":0,
-			"grid_size":[15,20]
-
+	"closed": false,
+	"name": "kahira",
+	"back_ground": [
+		"bg_ui_51"
+	],
+	"color": [
+		"freq",
+		"rand"
+	],
+	"size": [
+		"freq"
+	],
+	"progress": [
+		[
+			"red",
+			-1,
+			35,
+			1
+		]
+	],
+	"timer": 0,
+	"put": [
+		"same_color"
+	],
+	"score_counter": 0,
+	"grid_size": [
+		[
+			15,
+			20
+		]
+	],
+	"stages": {
+		"first": {
+			"funcs": [
+				"row",
+				"most_color",
+				"empty"
+			],
+			"color_det": "freq",
+			"size_det": "freq"
 		}
-	]
+	},
+	"upon_win": {}
 }

@@ -1,17 +1,59 @@
 {
-
-	"name":"menofia",
-	"back_ground":"back_ground",
-	"grids":[
+	"closed": false,
+	"name": "menofia",
+	"back_ground": [
+		"bg_level_11"
+	],
+	"color": [
+		"freq",
+		"rand"
+	],
+	"size": [
+		"rand",
+		"freq"
+	],
+	"progress": [
+		[
+			"com",
+			[
+				12,
+				15,
+				14
+			],
+			"row",
+			3
+		]
+	],
+	"timer": 0,
+	"put": [
+		"comb",
 		{
-			"color":["freq","rand"],
-			"size":["rand"],
-			"progress":[["red",-1,5]],
-			"timer":0,
-			"put":"same_color",
-			"score_counter":0,
-			"grid_size":[10,20]
-
+			"3+10": 12,
+			"4+8": 15,
+			"11+6": 14,
+			"8+4": 15,
+			"6+11": 14,
+			"10+3": 12
+		},
+		1
+	],
+	"score_counter": 0,
+	"grid_size": [
+		[
+			10,
+			20
+		]
+	],
+	"stages": {
+		"first": {
+			"funcs": [
+				"row",
+				"most_color",
+				"empty"
+			],
+			"color_det": "freq",
+			"size_det": "freq"
 		}
-	]
+	},
+	"upon_win": {}
 }

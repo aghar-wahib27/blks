@@ -1,0 +1,106 @@
+ 
+
+{
+
+	"name":"Credits",
+	
+	"gap":32,
+	
+	"padding":[0,30,30,30],
+
+	"mode":["align"],
+
+	"back_ground":{
+		"bg_ui_51":{
+					"anims":[]
+				}
+			},
+
+	"components":[
+	
+		{
+			"type":"representer",
+			"name":"Credits",
+			"parent_name":"cont_1",
+
+			"children":{
+				"text":["this project is completly done by python 9 9 version: python 3.2.1 9 frameworks: pygame-ce 9 art done on libresprite 9 9 the idea and implementation and artwork and code all are done by me , Ahmed Assem , all rights are preserved # "]
+			},
+			"spacing":{
+				"margin":[0,0,0,0],
+				"padding":[10,10,10,10],
+				"gap":10,
+				"mode":["order"],
+				"width_size_type":"grow",
+				"height_size_type":"grow"
+
+			},
+			"func":[
+				{
+				"respond":"click",
+				"modify":"game_state",
+				"system":"UI",
+				"state":"ui_1"
+			}
+		]
+
+		},
+		{
+			"type":"button",
+			"name":"back",
+			"parent_name":"root",
+
+			"children":{
+				"img":["bomareng_pointer"],
+				"text":["Back"]
+
+			},
+			"spacing":{
+				"margin":[0,0,0,0],
+				"padding":[10,10,10,10],
+				"gap":10,
+				"mode":["order"],
+				"alignx":"center",
+				"aligny":"bottom"
+
+			},
+			"func":[
+				{
+				"respond":"click",
+				"modify":"game_state",
+				"system":"UI",
+				"state":"ui_1"
+				}
+
+			]
+
+		}
+		
+
+	],
+
+	"containers":[
+		{
+			"name":"cont_1",
+			"parent_name":"root",
+			"sizing":["per_w+65","per_h+65"],
+			"spacing":{
+				"margin":[0,0,0,0],
+				"padding":[15,15,15,15],
+				"gap":30,
+				"mode":["order"],
+				"alignx":"center",
+				"aligny":"center"
+
+			},
+			"dir":"UTD"
+		}
+
+	]
+
+
+}
+
+
+
+

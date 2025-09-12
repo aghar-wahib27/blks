@@ -81,8 +81,9 @@ ui_assets={k.split(SEP)[-1].split('.')[0]:k for k in UIs}
 
 
 DATA=CP_DIR(CP(['data']),o=1,r=1)
+DATA_DICT={k.split(SEP)[-1].replace('.json',''):k for k in DATA }
 FONT=CP(['art_assets','Cascadia.ttf'])
+print(DATA_DICT)
 
-
-print(ui_assets)
+# print(ui_assets)
 

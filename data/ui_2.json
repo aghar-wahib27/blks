@@ -1,183 +1,397 @@
- 
-
 {
-
-	"name":"main_menu",
-
-	"positions":{
-		"components":{
-					
-			"pattern":{
-					"start":[325,245],
-					"step":[0,65]
-				}
-
-		},
-		"back_ground":{
-			"jungle_still":[0,0],
-			"moon_anim":[30,150],
-			"fire":[200,450],
-			"stone_levels":[250,250]
-
+	"name": "main_menu",
+	"gap": 32,
+	"padding": [
+		30,
+		30,
+		30,
+		30
+	],
+	"mode": [
+		"align"
+	],
+	"back_ground": {
+		"bg_ui_21": {
+			"anims": []
 		}
-		
-
-
 	},
-
-	"back_ground":{
-			"jungle_still":["AO"],
-			"moon_anim":["AO"],
-			"fire":[200,450],
-			"stone_levels":[250,250]
-
-		},
-
-	"components":[
-
+	"components": [
 		{
-			"type":"button",
-			"name":"Kahira",
-			"img":"level_1_logo",
-			"pos":5,
-			"diminsions":[90,40],
-			"func":[
+			"type": "button",
+			"name": "Menofia",
+			"children": {
+				"img": [
+					"level_2_logo"
+				]
+			},
+			"spacing": {
+				"margin": [
+					0,
+					0,
+					0,
+					0
+				],
+				"padding": [
+					0,
+					0,
+					0,
+					0
+				],
+				"gap": 30,
+				"mode": [
+					"order"
+				],
+				"alignx": "per+70",
+				"aligny": ""
+			},
+			"parent_name": "cont_1",
+			"func": [
 				{
-				"respond":"click",
-				"system":"level",
-				"modify":"game_state",
-				"state":"kahira"
+					"respond": "click",
+					"system": "level",
+					"modify": "game_state",
+					"state": "menofia"
 				},
 				{
-				"respond":"click",
-				"system":"UI",
-				"modify":"game_state",
-				"state":0
+					"respond": "click",
+					"system": "UI",
+					"modify": "game_state",
+					"state": 0
 				},
 				{
-				"respond":"hover",
-				"func":["hover_menu","show",1]
+					"respond": "hover",
+					"func": [
+						"book",
+						"show",
+						{
+							"img": [
+								"level_2_logo"
+							],
+							"text": [
+								"el-menofia",
+								"complete 3 rows of mixed colors"
+							],
+							"ch": [
+								1,
+								1
+							]
+						},
+						1
+					]
 				}
-
 			]
-
-		},
-
-		{
-			"type":"button",
-			"name":"Menofia",
-			"img":"level_1_logo",
-			"pos":1,
-			"diminsions":[90,40],
-			"func":[
-				{
-				"respond":"click",
-				"system":"level",
-				"modify":"game_state",
-				"state":"menofia"
-				},
-				{
-				"respond":"click",
-				"system":"UI",
-				"modify":"game_state",
-				"state":0
-				},
-				{
-				"respond":"hover",
-				"func":["hover_menu","show",1]
-				}
-
-			]
-
-		},
-		{
-			"type":"button",
-			"name":"Domyat",
-			"img":"level_2_logo",
-
-			"diminsions":[130,40],
-			"pos":2,
-			"func":[
-				{
-				"respond":"click",
-				"system":"level",
-				"modify":"game_state",
-				"state":"domyat"
-				},
-				{
-				"respond":"click",
-				"system":"UI",
-				"modify":"game_state",
-				"state":0
-				},
-				{
-				"respond":"hover",
-				"func":["hover_menu","show",1]
-				}
-
-			]
-
 		},
 		{
-			"type":"button",
-			"name":"Sharkia",
-			"img":"level_3_logo",
-
-			"diminsions":[145,40],
-			"pos":3,
-			"func":[
+			"type": "button",
+			"name": "Domyat",
+			"children": {
+				"img": [
+					"level_3_logo"
+				]
+			},
+			"spacing": {
+				"margin": [
+					0,
+					0,
+					0,
+					0
+				],
+				"padding": [
+					0,
+					0,
+					0,
+					0
+				],
+				"gap": 30,
+				"mode": [
+					"order"
+				],
+				"alignx": "per+40",
+				"aligny": ""
+			},
+			"parent_name": "cont_1",
+			"func": [
 				{
-				"respond":"click",
-				"system":"level",
-				"modify":"game_state",
-				"state":"sharkia"
+					"respond": "click",
+					"system": "level",
+					"modify": "game_state",
+					"state": "domyat"
 				},
 				{
-				"respond":"click",
-				"system":"UI",
-				"modify":"game_state",
-				"state":0
+					"respond": "click",
+					"system": "UI",
+					"modify": "game_state",
+					"state": 0
 				},
 				{
-				"respond":"hover",
-				"func":["hover_menu","show",1]
+					"respond": "hover",
+					"func": [
+						"book",
+						"show",
+						{
+							"img": [
+								"level_3_logo"
+							],
+							"text": [
+								"Domyat",
+								"complete 7 coloums of the same color "
+							],
+							"ch": [
+								1,
+								1
+							]
+						},
+						1
+					]
 				}
-
 			]
 		},
-			{
-			"type":"button",
-			"name":"Helwan",
-			"img":"level_4_logo",
-			"diminsions":[80,40],
-			"pos":4,
-			"func":[
+		{
+			"type": "button",
+			"name": "Sharkia",
+			"parent_name": "cont_1",
+			"children": {
+				"img": [
+					"level_4_logo"
+				]
+			},
+			"spacing": {
+				"margin": [
+					0,
+					0,
+					0,
+					0
+				],
+				"padding": [
+					0,
+					0,
+					0,
+					0
+				],
+				"gap": 30,
+				"mode": [
+					"order"
+				],
+				"alignx": "per+20",
+				"aligny": ""
+			},
+			"func": [
 				{
-				"respond":"click",
-				"system":"level",
-				"modify":"game_state",
-				"state":"helwan"
+					"respond": "click",
+					"system": "level",
+					"modify": "game_state",
+					"state": "sharkia"
 				},
 				{
-				"respond":"click",
-				"system":"UI",
-				"modify":"game_state",
-				"state":0
+					"respond": "click",
+					"system": "UI",
+					"modify": "game_state",
+					"state": 0
 				},
 				{
-				"respond":"hover",
-				"func":["hover_menu","show",1]
+					"respond": "hover",
+					"func": [
+						"book",
+						"show",
+						{
+							"img": [
+								"level_4_logo"
+							],
+							"text": [
+								"el-sharkia",
+								"complete 5 rows of the same color"
+							],
+							"ch": [
+								1,
+								1
+							]
+						},
+						1
+					]
 				}
-
 			]
-
-		
+		},
+		{
+			"type": "button",
+			"name": "Helwan",
+			"parent_name": "cont_1",
+			"children": {
+				"img": [
+					"level_1_logo"
+				]
+			},
+			"spacing": {
+				"margin": [
+					0,
+					0,
+					0,
+					0
+				],
+				"padding": [
+					0,
+					0,
+					0,
+					0
+				],
+				"gap": 30,
+				"mode": [
+					"order"
+				],
+				"alignx": "per+45",
+				"aligny": ""
+			},
+			"func": [
+				{
+					"respond": "click",
+					"system": "level",
+					"modify": "game_state",
+					"state": "helwan"
+				},
+				{
+					"respond": "click",
+					"system": "UI",
+					"modify": "game_state",
+					"state": 0
+				},
+				{
+					"respond": "click",
+					"modify": "fade",
+					"data": [
+						[
+							0,
+							1
+						],
+						"",
+						"helwan"
+					]
+				},
+				{
+					"respond": "hover",
+					"func": [
+						"book",
+						"show",
+						{
+							"img": [
+								"level_1_logo"
+							],
+							"text": [
+								"Helwan",
+								"complete 3/4 of the level"
+							],
+							"ch": [
+								1,
+								1
+							]
+						},
+						1
+					]
+				}
+			]
+		},
+		{
+			"type": "button",
+			"name": "back",
+			"parent_name": "root",
+			"children": {
+				"img": [
+					"bomareng_pointer"
+				],
+				"text": [
+					"back"
+				]
+			},
+			"spacing": {
+				"margin": [
+					0,
+					0,
+					0,
+					0
+				],
+				"padding": [
+					0,
+					0,
+					0,
+					0
+				],
+				"gap": 30,
+				"mode": [
+					"order",
+					"align"
+				],
+				"alignx": "left",
+				"aligny": "bottom"
+			},
+			"func": [
+				{
+					"respond": "click",
+					"system": "UI",
+					"modify": "game_state",
+					"state": "ui_1"
+				}
+			]
+		},
+		{
+			"type": "representer",
+			"name": "book",
+			"parent_name": "root",
+			"children": {
+				"img": [
+					"book"
+				]
+			},
+			"spacing": {
+				"margin": [
+					0,
+					0,
+					0,
+					0
+				],
+				"padding": [
+					0,
+					0,
+					0,
+					0
+				],
+				"gap": 30,
+				"mode": [
+					"order",
+					"align"
+				],
+				"alignx": "right",
+				"aligny": "bottom"
+			}
+		}
+	],
+	"containers": [
+		{
+			"name": "cont_1",
+			"parent_name": "root",
+			"sizing": [
+				"per_w+60",
+				"fit_h"
+			],
+			"spacing": {
+				"margin": [
+					0,
+					0,
+					0,
+					0
+				],
+				"padding": [
+					10,
+					10,
+					10,
+					10
+				],
+				"gap": 40,
+				"mode": [
+					"order",
+					"align"
+				],
+				"alignx": "center",
+				"aligny": "center"
+			},
+			"dir": "UTD"
 		}
 	]
-
-
 }
-
-
-
-

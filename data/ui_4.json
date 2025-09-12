@@ -3,35 +3,15 @@
 {
 
 	"name":"pause_menu",
-
-	"positions":{
-		"components":{
-					
-			"pattern":{
-					"start":[305,245],
-					"step":[0,65]
-				}
-
-		},
-		"back_ground":{
-			"jungle_still":[0,0],
-			"moon_anim":[30,150],
-			"fire":[200,450],
-			"stone_levels":[250,250]
-
-		}
-		
-
-
-	},
+	"gap":32,
+	"mode":["align"],
+	"padding":[0,0,0,0],
 
 	"back_ground":{
-			"jungle_still":["AO"],
-			"moon_anim":["AO"],
-			"fire":[200,450],
-			"stone_levels":[250,250]
-
-		},
+		"bg_ui_21":{
+					"anims":[]
+				}
+			},
 
 	"components":[
 
@@ -40,8 +20,22 @@
 		{
 			"type":"button",
 			"name":"main_menu",
-			"pos":1,
-			"diminsions":[90,40],
+			"parent_name":"cont_1",
+
+			"children":{
+				"img":["bomareng_pointer"],
+				"text":["main_menu"]
+
+			},
+			"spacing":{
+				"margin":[0,0,0,0],
+				"padding":[10,10,10,10],
+				"gap":10,
+				"mode":["order"],
+				"alignx":"center",
+				"aligny":""
+
+			},
 			"func":[
 
 				{
@@ -49,6 +43,12 @@
 				"system":"UI",
 				"modify":"game_state",
 				"state":"ui_1"
+				},
+				{
+				"respond":"click",
+				"system":"level",
+				"modify":"game_state",
+				"state":""
 				},
 				{
 				"respond":"hover",
@@ -61,8 +61,21 @@
 		{
 			"type":"button",
 			"name":"back",
-			"diminsions":[130,40],
-			"pos":2,
+			"parent_name":"cont_1",
+			"children":{
+				"img":["bomareng_pointer"],
+				"text":["back"]
+
+			},
+			"spacing":{
+				"margin":[0,0,0,0],
+				"padding":[10,10,10,10],
+				"gap":10,
+				"mode":["order"],
+				"alignx":"center",
+				"aligny":""
+
+			},
 			"func":[
 				{
 				"respond":"click",
@@ -77,8 +90,22 @@
 		{
 			"type":"button",
 			"name":"settings",
-			"diminsions":[145,40],
-			"pos":3,
+			"parent_name":"cont_1",
+
+			"children":{
+				"img":["bomareng_pointer"],
+				"text":["settings"]
+
+			},
+			"spacing":{
+				"margin":[0,0,0,0],
+				"padding":[10,10,10,10],
+				"gap":10,
+				"mode":["order"],
+				"alignx":"center",
+				"aligny":""
+
+			},
 			"func":[
 				{
 				"respond":"click",
@@ -89,6 +116,27 @@
 			}
 		]
 		}
+	],
+
+	"containers":[
+
+		{
+			"name":"cont_1",
+			"parent_name":"root",
+			"sizing":["fit_w","fit_h"],
+			"spacing":{
+				"margin":[0,0,0,0],
+				"padding":[0,20,20,20],
+				"gap":30,
+				"mode":["order","align"],
+				"alignx":"center",
+				"aligny":"center"
+
+
+			},
+			"dir":"UTD"
+		}
+
 	]
 
 

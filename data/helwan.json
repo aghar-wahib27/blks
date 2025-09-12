@@ -1,17 +1,28 @@
 {
-
+	"closed":false,
 	"name":"helwan",
-	"back_ground":"back_ground",
-	"grids":[
-		{
-			"color":["freq","rand"],
-			"size":["rand"],
-			"progress":[["red",-1,5]],
-			"timer":0,
-			"put":"same_color",
-			"score_counter":0,
-			"grid_size":[10,10]
-
+	"next_level":"level_2_logo",
+	"back_ground": ["bg_level_11"],
+	"color":["rest_rand","rand"],
+	"size":["freq"],
+	"progress":[["red",-1,25,1]],
+	"timer":0,
+	"put":[ "same_color" ],
+	"score_counter":0,
+	"grid_size":[[10,10]],
+	"stages":{
+		"first":{
+			"funcs":["row","most_color","empty"],
+			"color_det":"freq",
+			"size_det":"freq"
 		}
-	]
+	},
+	"upon_win":{
+		"Entities":["sharkia","ui_2","ui_2"],
+		"Changes":[["closed",false],["components+3+func+0+system","level"],["components+3+func+1+system","UI"]
+]
+			}
+
+		
+	
 }

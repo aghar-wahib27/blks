@@ -1,0 +1,105 @@
+{
+	"name": "state_panel",
+	"gap": 100,
+	"padding": [
+		30,
+		30,
+		30,
+		30
+	],
+	"mode": [
+		"align"
+	],
+	"back_ground": {
+		"bg_ui_1001": {
+			"anims": [],
+			"blur": 3
+		}
+	},
+	"components": [
+		{
+			"type": "button",
+			"name": "continue",
+			"parent_name": "root",
+			"children": {
+				"img": [
+					"bomareng_pointer"
+				],
+				"text": [
+					"continue"
+				]
+			},
+			"spacing": {
+				"margin": [
+					0,
+					0,
+					0,
+					0
+				],
+				"padding": [
+					0,
+					0,
+					0,
+					0
+				],
+				"gap": 10,
+				"mode": [
+					"order"
+				],
+				"alignx": "center",
+				"aligny": "bottom"
+			},
+			"func": [
+				{
+					"respond": "click",
+					"system": "UI",
+					"modify": "game_state",
+					"state": "ui_2"
+				},
+				{
+					"respond": "hover",
+					"func": [
+						"hover_menu",
+						"show",
+						1
+					]
+				}
+			]
+		},
+		{
+			"type": "representer",
+			"name": "states",
+			"parent_name": "root",
+			"dir": "LTR",
+			"children": {
+				"text": [
+					"you have unlocked "
+				],
+				"img": [
+					"level_4_logo"
+				]
+			},
+			"spacing": {
+				"margin": [
+					0,
+					0,
+					0,
+					0
+				],
+				"padding": [
+					0,
+					0,
+					0,
+					0
+				],
+				"gap": 30,
+				"mode": [
+					"order"
+				],
+				"alignx": "center",
+				"aligny": "center"
+			}
+		}
+	],
+	"containers": []
+}

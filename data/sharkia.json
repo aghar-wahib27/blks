@@ -1,17 +1,77 @@
 {
-
-	"name":"sharkia",
-	"back_ground":"back_ground",
-	"grids":[
-		{
-			"color":["freq","rand"],
-			"size":["rand"],
-			"progress":[["red",-1,5]],
-			"timer":0,
-			"put":"same_color",
-			"score_counter":0,
-			"grid_size":[15,25]
-
+	"closed": false,
+	"name": "sharkia",
+	"back_ground": [
+		"bg_level_11"
+	],
+	"color": [
+		"freq",
+		"rand"
+	],
+	"size": [
+		"rand",
+		"freq"
+	],
+	"progress": [
+		[
+			"com",
+			[
+				3,
+				6,
+				4,
+				11,
+				8
+			],
+			"row",
+			5
+		]
+	],
+	"timer": 0,
+	"put": [
+		"same_color"
+	],
+	"score_counter": 0,
+	"grid_size": [
+		[
+			15,
+			25
+		]
+	],
+	"stages": {
+		"first": {
+			"funcs": [
+				"row",
+				"most_color",
+				"empty"
+			],
+			"color_det": "freq",
+			"size_det": "freq"
 		}
-	]
+	},
+	"upon_win": {
+		"Entities": [
+			"domyat",
+			"ui_2",
+			"ui_2",
+			"ui_100"
+		],
+		"Changes": [
+			[
+				"closed",
+				false
+			],
+			[
+				"components+2+func+0+system",
+				"level"
+			],
+			[
+				"components+2+func+1+system",
+				"UI"
+			],
+			[
+				"components+1+children+img+0",
+				"level_2_logo"
+			]
+		]
+	}
 }
