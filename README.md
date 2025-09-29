@@ -1,5 +1,8 @@
 ## game show
-![Uploading show_game.gif…]()
+
+
+Uploading game_show.mp4…
+
 
 
 ## installing
