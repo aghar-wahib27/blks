@@ -23,7 +23,7 @@ python3 main.py
 nice play !
 
 ## future plans
-there is no intenions to add any new system like particles or cutscenes
+there is no intenions to add any new system like particles or cutscenes \n
 although if I developed them on future projects I might try itegrating them with this project
 there is an intention on creating a ```blks.exe``` to easen the process of installing and playing if you are not conecernd with the code , though it still needs a little bit of polishing 
 so stay tuned !
