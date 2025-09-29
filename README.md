@@ -30,9 +30,9 @@ Although if I developed them on future projects I might try itegrating them with
 there is an intention on creating a ```blks.exe``` to easen the process of installing and playing if you are not conecernd with the code , though it still needs a little bit of polishing . <br>
 so stay tuned !
 
-## credit
+## Credit
 credit to nic barker : https://www.youtube.com/@nicbarkeragain
 as the UI system of the whole project is inspired from him
 
-## license
+## License
 This project is licensed under the [MIT License](https://mit-license.org/)
