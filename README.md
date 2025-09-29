@@ -23,7 +23,7 @@ python3 main.py
 nice play !
 
 ## future plans
-There is no intenions to add any new system like particles or cutscenes,
+There is no intenions to add any new system like particles or cutscenes,  
 
 Although if I developed them on future projects I might try itegrating them with this project.
 
