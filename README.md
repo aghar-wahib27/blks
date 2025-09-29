@@ -1,4 +1,6 @@
+## game show
 
+![Uploading show_game.gif…]()
 
 ## installing
 before running ```main.py``` run :
