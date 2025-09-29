@@ -1,11 +1,6 @@
 ## game show
 
-![show_game](https://github.com/user-attachments/assets/a521e786-4ba8-444e-8da6-8a01242f761d)
-
-
 https://github.com/user-attachments/assets/864787bb-b62a-47a8-bf4e-298ccdf55eea
-
-
 
 ## installing
 before running ```main.py``` run :
